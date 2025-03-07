@@ -9,6 +9,7 @@ A simple and modern resume template built with HTML, CSS, and JavaScript. It hig
 - Modern and professional look
 - Simple and easy to use
 - No need to write any code
+- Easy to print and save as PDF
 
 ## How to Use
 

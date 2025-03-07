@@ -1,6 +1,6 @@
 # My Resume Template
 
-A simple and modern resume template built with HTML, CSS, and JavaScript. It highlights the skills and experience of the candidate in a visually appealing way.
+A simple and modern resume template built with HTML, CSS, and JavaScript. It highlights the skills and experience of the candidate in a visually appealing way. You can use it to create a professional resume for your job application.
 
 ## Features
 

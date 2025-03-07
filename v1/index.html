@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Theodorian OKISSI's Resume - Full-Stack Developer (ERP) - University of
+      Kigali
+    </title>
+    <style>
+      :root {
+        --primary: #61dafb;
+        --secondary: #068db3;
+        --text: #1e293b;
+        --background: #ffffff;
+        --muted: #64748b;
+        --border: #e2e8f0;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+      }
+
+      body {
+        background-color: var(--background);
+        color: var(--text);
+        line-height: 1.6;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+      }
+
+      .header-left {
+        background: #1a1a1a;
+        padding: 1.5rem;
+        border-radius: 8px;
+        width: 50%;
+      }
+
+      .header-left h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+
+      .header-left p {
+        color: var(--primary);
+        font-size: 1.2rem;
+        font-weight: 200;
+        margin-bottom: 0;
+      }
+
+      .contact-info {
+        text-align: right;
+      }
+
+      .contact-info a {
+        display: block;
+        color: var(--text);
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.5rem;
+      }
+
+      .contact-info a:nth-child(3) {
+        text-decoration: underline;
+      }
+
+      .contact-info a:hover {
+        color: var(--primary);
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      .section-title {
+        color: var(--secondary);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .section-title::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--secondary);
+        margin-left: 0.5rem;
+      }
+
+      .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .skill-category {
+        background: #e8f0f8;
+        padding: 1rem;
+        border-radius: 4px;
+        border: 1px solid var(--border);
+      }
+
+      .skill-category h3 {
+        color: var(--text);
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .skill-list {
+        list-style: disc;
+        color: var(--muted);
+        font-size: 0.9rem;
+        padding-left: 1.75rem;
+      }
+
+      .experience-item {
+        margin-bottom: 1.5rem;
+      }
+
+      .experience-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+      }
+
+      .company {
+        font-weight: 600;
+      }
+
+      .date {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .position {
+        color: var(--secondary);
+        font-weight: 500;
+      }
+
+      .education-degree-list {
+        color: var(--secondary);
+        font-weight: 500;
+        padding-left: 1.75rem;
+      }
+
+      .education-degree-list li {
+        margin-bottom: 0.5rem;
+        list-style: disc;
+      }
+
+      .responsibilities {
+        list-style: none;
+        padding-left: 1rem;
+      }
+
+      .responsibilities li {
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+        position: relative;
+      }
+
+      .responsibilities li::before {
+        content: "•";
+        color: var(--secondary);
+        position: absolute;
+        left: 0;
+      }
+
+      .education-item {
+        margin-bottom: 1rem;
+      }
+
+      .education-item p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-left">
+          <h1>Theodorian OKISSI</h1>
+          <p>Full-Stack Developer</p>
+        </div>
+        <div class="contact-info">
+          <a href="mailto:cuttypie424@gmail.com" target="_blank"
+            >cuttypie424@gmail.com 📧</a
+          >
+          <a href="tel:250-793-905-099" target="_blank">(250) 793-905-099 📱</a>
+          <a href="https://cuttypiedev.vercel.app/" target="_blank"
+            >My Website 🌐</a
+          >
+          <a href="#">Kigali, Rwanda 📍</a>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p>
+          Innovative Full-Stack Developer with 5+ years of experience in web and
+          mobile development. Specialized in building scalable applications
+          using modern technologies. Strong background in user experience,
+          performance optimization, and system integration. Passionate about
+          educational technology and committed to delivering high-quality,
+          maintainable solutions. Able to face new challenges and work
+          efficiently in a team.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <ul class="skill-list">
+              <li>React / Next.js App Router</li>
+              <li>React Native / Expo</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>Shadcn UI / Radix UI</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <ul class="skill-list">
+              <li>Node.js / Express.js</li>
+              <li>Next.js with RSC and Server Actions</li>
+              <li>tRPC</li>
+              <li>Mongoose / Prisma ORM</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Database & Cloud</h3>
+            <ul class="skill-list">
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+              <li>SQL Server</li>
+              <li>Vercel / AWS / Azure</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Methods</h3>
+            <ul class="skill-list">
+              <li>Git / GitHub</li>
+              <li>Agile / Scrum</li>
+              <li>CI/CD</li>
+              <li>Unit Testing</li>
+              <li>System Design</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="company">Wemi Labs (Ownership)</span>
+            <span class="date">Current</span>
+          </div>
+          <div class="position">Senior Full-Stack Developer</div>
+          <ul class="responsibilities">
+            <li>
+              Architecting and developing modern web applications like,
+              <strong
+                >Turbo MIS: an AI-powered next-generation school management
+                system</strong
+              >
+            </li>
+            <li>
+              Building cross-platform mobile apps
+              <strong>(Dreamnal)</strong> with React Native and Expo, achieving
+              4.8+ ratings on app stores
+            </li>
+            <li>
+              Implementing type-safe APIs using tRPC and Prisma, ensuring
+              end-to-end type safety
+            </li>
+            <li>
+              Creating reusable UI components using Shadcn UI and Radix UI,
+              improving development efficiency by 50%
+            </li>
+            <li>
+              Establishing coding standards focusing on functional programming
+              and component modularity
+            </li>
+            <li>
+              Implementing CI/CD pipelines using GitHub Actions and pnpm for
+              faster deployments
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="company">Freelance (Gabon - Rwanda)</span>
+            <span class="date">2023 - 2024</span>
+          </div>
+          <div class="position">Full-Stack Developer</div>
+          <ul class="responsibilities">
+            <li>
+              Developing
+              <strong>Wermi POS (in progress)</strong>: A comprehensive
+              restaurant management platform that bridges the gap between
+              restaurants and their customers through a digital interface, while
+              providing valuable business insights and operational efficiency.
+            </li>
+            <li>
+              Created comprehensive documentation for component libraries and
+              API integrations with software requirements and best practices.
+            </li>
+            <li>
+              Built
+              <strong>HolyLens</strong>: A social blog focusing on spiritually
+              lifting people through the power of words.
+            </li>
+            <li>
+              Mobile-first responsive interfaces using modern React patterns and
+              hooks
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="company">USIA - ESSIG (Gabon)</span>
+            <span class="date">2020 - 2023</span>
+          </div>
+          <div class="position">Web Developer</div>
+          <ul class="responsibilities">
+            <li>
+              Built the
+              <a href="https://essigfcv.netlify.app/" target="_blank"
+                >university's website</a
+              >
+              using HTML5, CSS3, and JavaScript.
+            </li>
+            <li>
+              Developed backend services for the website administration using
+              ejs and Express.js
+            </li>
+            <li>
+              Built
+              <strong>Welmi LMS (Learning Management System)</strong> as my
+              graduation project for the university (production phase in
+              progress).
+            </li>
+            <li>Implemented real-time features using WebSocket technology</li>
+            <li>Managed all phases of the website's development lifecycle</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <div class="experience-header">
+            <span class="company"
+              >Université des Sciences d'Infomatique Appliquées (Gabon)</span
+            >
+            <span class="date">2018 - 2023</span>
+          </div>
+          <ul class="education-degree-list">
+            <li>
+              Bachelor's Degree in Enterprise-level Networking Administration
+            </li>
+            <li>
+              Professional Academic and Technological Degree in Enterprise-level
+              Networking Administration
+            </li>
+          </ul>
+
+          <p>All graduated with First Class Honours</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="skill-grid">
+          <div class="skill-category">
+            <h3>Microsoft</h3>
+            <ul class="skill-list">
+              <li>Azure Developer Associate <strong>(in progress)</strong></li>
+              <li>
+                Microsoft Certified: Dynamics 365 <strong>(in progress)</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Web Development</h3>
+            <ul class="skill-list">
+              <li>React / React Native Specialist</li>
+              <li>AWS Certified Developer <strong>(in progress)</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
